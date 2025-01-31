@@ -10,13 +10,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 text-white shadow-md">
+    <nav className="bg-emerald-100 text-emerald-800 shadow-md">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo - Clickable Home link */}
           <Link 
             to="/" 
-            className="text-xl font-bold tracking-tight hover:text-blue-100 transition-colors"
+            className="text-xl font-bold tracking-tight hover:text-emerald-600 transition-colors"
           >
             Kongayam Koottaayma
           </Link>
@@ -26,7 +26,7 @@ const Navbar = () => {
             <li>
               <Link 
                 to="/" 
-                className="hover:text-blue-100 transition-colors py-2"
+                className="hover:text-emerald-600 transition-colors py-2"
               >
                 Home
               </Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
             <li>
               <Link 
                 to="/about" 
-                className="hover:text-blue-100 transition-colors py-2"
+                className="hover:text-emerald-600 transition-colors py-2"
               >
                 About
               </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
             <li>
               <Link 
                 to="/gallery" 
-                className="hover:text-blue-100 transition-colors py-2"
+                className="hover:text-emerald-600 transition-colors py-2"
               >
                 Gallery
               </Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
             <li>
               <Link 
                 to="/contact" 
-                className="hover:text-blue-100 transition-colors py-2"
+                className="hover:text-emerald-600 transition-colors py-2"
               >
                 Contact
               </Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 rounded-lg hover:bg-blue-700 transition-colors"
+            className="md:hidden p-2 rounded-lg hover:bg-emerald-200 transition-colors"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -77,7 +77,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/"
-                className="block py-2 px-4 hover:bg-blue-700 rounded-lg transition-colors"
+                className="block py-2 px-4 hover:bg-emerald-200 rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
@@ -86,7 +86,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/about"
-                className="block py-2 px-4 hover:bg-blue-700 rounded-lg transition-colors"
+                className="block py-2 px-4 hover:bg-emerald-200 rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
@@ -95,7 +95,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/gallery"
-                className="block py-2 px-4 hover:bg-blue-700 rounded-lg transition-colors"
+                className="block py-2 px-4 hover:bg-emerald-200 rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Gallery
@@ -104,7 +104,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/contact"
-                className="block py-2 px-4 hover:bg-blue-700 rounded-lg transition-colors"
+                className="block py-2 px-4 hover:bg-emerald-200 rounded-lg transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Contact
