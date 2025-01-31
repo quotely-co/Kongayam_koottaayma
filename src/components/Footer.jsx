@@ -28,7 +28,7 @@ const Footer = () => {
 
         {/* Copyright */}
         <div className="text-sm">
-          <p>&copy; 2025 CharityOrg. All rights reserved.</p>
+          <p>&copy; 2025 Kongayam Koottaayma. All rights reserved.</p>
         </div>
       </div>
     </footer>

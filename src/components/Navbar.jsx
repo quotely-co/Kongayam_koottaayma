@@ -18,7 +18,7 @@ const Navbar = () => {
             to="/" 
             className="text-xl font-bold tracking-tight hover:text-blue-100 transition-colors"
           >
-            CharityOrg
+            Kongayam Koottaayma
           </Link>
 
           {/* Desktop Menu */}
