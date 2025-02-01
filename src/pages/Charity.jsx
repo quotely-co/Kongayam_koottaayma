@@ -11,7 +11,7 @@ const Charity = () => {
 
     if (isAndroid) {
       // Deep link to Google Pay app
-      window.location.href = 'upi://pay?pa=YOUR_UPI_ID@upi&pn=Charity%20Fund&mc=0000&tid=YOUR_TRANSACTION_ID&tr=YOUR_TRANSACTION_REF&tn=Charity%20Donation&am=&cu=INR&url=';
+      window.location.href = 'upi://pay?pa=9744676504@ptaxis&pn=Charity%20Fund&mc=0000&tid=YOUR_TRANSACTION_ID&tr=YOUR_TRANSACTION_REF&tn=Charity%20Donation&am=&cu=INR&url=';
     } else {
       // Fallback to web URL
       window.location.href = 'https://pay.google.com/gp/p/ui/pay?tid=YOUR_TRANSACTION_ID';
@@ -43,7 +43,7 @@ const Charity = () => {
         {/* Image */}
         <div className="relative h-[300px] md:h-[400px]">
           <img
-            src="/api/placeholder/800/600"
+            src="/images/charity.jpg"
             alt="Charity Activities"
             className="w-full h-full object-cover rounded-lg shadow-xl"
           />
