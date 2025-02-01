@@ -57,7 +57,7 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Map Section */}
+      {/* Map Sections */}
       <div className="bg-white rounded-lg shadow-lg p-4 mb-12">
         <div className="aspect-w-16 aspect-h-9">
           <iframe
