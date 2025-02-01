@@ -7,6 +7,18 @@
         {
             "src": "/about",
             "dest": "/"
+        },
+        {
+            "src": "/charity",
+            "dest": "/"
+        },
+        {
+            "src": "/gallery",
+            "dest": "/"
+        },
+        {
+            "src": "/contact",
+            "dest": "/"
         }
     ]
 }
