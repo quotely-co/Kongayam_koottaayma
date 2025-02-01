@@ -5,20 +5,26 @@ const LatestNews = () => {
     {
       id: 1,
       title: "കോങ്കയം കൂട്ടായ്മയുടെ വാർഷിക സമ്മേളനം",
-      date: "2024 ജനുവരി 15",
-      description: "കോങ്കയം കൂട്ടായ്മയുടെ വാർഷിക സമ്മേളനം വിജയകരമായി സമാപിച്ചു. നൂറുകണക്കിന് അംഗങ്ങൾ പങ്കെടുത്തു."
+      date: "2025 ഫെബ്രുവരി 02",
+      description: "കോങ്കയം കൂട്ടായ്മയുടെ വാർഷിക സമ്മേളനം",
+      imageUrl: "/images/news.jpeg", // Add image URL here
+      isUpcoming: true // Flag to mark upcoming news
     },
     {
       id: 2,
       title: "ചാരിറ്റി ഫണ്ട് വിതരണം",
       date: "2024 ഫെബ്രുവരി 1",
-      description: "രോഗികൾക്ക് സഹായധനം വിതരണം ചെയ്തു. 50 കുടുംബങ്ങൾക്ക് സഹായം ലഭിച്ചു."
+      description: "രോഗികൾക്ക് സഹായധനം വിതരണം ചെയ്തു. 50 കുടുംബങ്ങൾക്ക് സഹായം ലഭിച്ചു.",
+      imageUrl: "/path/to/your/image2.jpg", // Add image URL here
+      isUpcoming: false
     },
     {
       id: 3,
       title: "മെഡിക്കൽ ക്യാമ്പ്",
       date: "2024 മാർച്ച് 10",
-      description: "സൗജന്യ മെഡിക്കൽ ക്യാമ്പ് സംഘടിപ്പിച്ചു. 200-ലധികം പേർക്ക് പ്രയോജനം ലഭിച്ചു."
+      description: "സൗജന്യ മെഡിക്കൽ ക്യാമ്പ് സംഘടിപ്പിച്ചു. 200-ലധികം പേർക്ക് പ്രയോജനം ലഭിച്ചു.",
+      imageUrl: "/path/to/your/image3.jpg", // Add image URL here
+      isUpcoming: true
     }
   ];
 
@@ -36,12 +42,12 @@ const LatestNews = () => {
           {newsItems.map((item) => (
             <article 
               key={item.id} 
-              className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
+              className={`bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl ${item.isUpcoming ? 'opacity-75' : ''}`}
             >
               {/* Image Container */}
               <div className="relative h-48 overflow-hidden">
                 <img 
-                  src="/api/placeholder/800/600"
+                  src={item.imageUrl || "/api/placeholder/800/600"} // Use image URL or fallback to placeholder
                   alt={item.title}
                   className="w-full h-full object-cover"
                 />
@@ -62,7 +68,7 @@ const LatestNews = () => {
                 <button 
                   className="text-green-600 font-semibold hover:text-green-700 transition duration-300 flex items-center"
                 >
-                  കൂടുതൽ വായിക്കുക
+                  {item.isUpcoming ? "Coming Soon" : "Read More"} {/* Conditional text */}
                   <svg 
                     className="w-4 h-4 ml-2" 
                     fill="none" 
