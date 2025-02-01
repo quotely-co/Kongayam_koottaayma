@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <footer className="bg-green-200 text-black py-8">
             <div className="container mx-auto text-center">
-                {/* Social Media Links */}
+                {/* Social Media Link */}
                 <div className="flex justify-center space-x-6 mb-6">
                     <a href="https://www.facebook.com/kongayam" target="_blank" rel="noopener noreferrer">
                         <FaFacebook size={30} className="text-black hover:text-green-600" />
