@@ -6,7 +6,7 @@ const About = () => {
 
             {/* Content */}
             <div className="flex flex-col md:flex-row items-center gap-6">
-                {/* Left Side - Text Content */}
+                {/* Left Side - Text Contents */}
                 <div className="md:w-1/2">
                     <p className="text-lg text-gray-800 text-center mt-4">
                         കോഡൂർ പഞ്ചായത്തിലെ ചരിത്ര പാരമ്പര്യമുള്ള ഗ്രാമമാണ് കോങ്കയം. വിഖ്യാതമായ കോങ്കയം പള്ളിയും കടലുണ്ടിപ്പുഴയും കിളിയമണ്ണിൽ തറവാടും വളപ്പിൽ തൊടി ഭഗവതി ക്ഷേത്രവുമൊക്കെ നമ്മുടെ നാടിൻ്റെ പൈതൃകങ്ങളാണ്. സമാധാനവും സൗഹാർദവും കളിയാടുന്ന ഈ കൊച്ചുഗ്രാമത്തിൽ 2017 നവംബർ 5 ന് പിറവിയെടുത്ത ജനകീയ വേദിയാണ് കോങ്കയം കൂട്ടായ്‌മ.
