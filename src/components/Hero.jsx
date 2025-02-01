@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="flex flex-col items-center justify-center h-full text-center text-white space-y-8">
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight animate-fade-in-up">
-            Kongayam Koottaayma
+          കോങ്കയം കൂട്ടായ്മ
           </h1>
 
           {/* Subheading */}
@@ -30,11 +30,11 @@ const Hero = () => {
           {/* Stats Section */}
           <div className="grid grid-cols-3 gap-8 mt-12 animate-fade-in-up">
             <div className="text-center">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-emerald-100">20+</div>
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-emerald-100">7+</div>
               <div className="text-sm md:text-base text-emerald-50/90">Years of Service</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-emerald-100">500+</div>
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-emerald-100">350+</div>
               <div className="text-sm md:text-base text-emerald-50/90">Active Members</div>
             </div>
             <div className="text-center">

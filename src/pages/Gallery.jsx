@@ -1,9 +1,25 @@
 const Gallery = () => {
     const images = [
-      "https://source.unsplash.com/featured/?charity",
-      "https://source.unsplash.com/featured/?volunteer",
-      "https://source.unsplash.com/featured/?donation",
-      "https://source.unsplash.com/featured/?helping"
+        "/images/image1.jpeg",
+        "/images/image2.jpeg",
+        "/images/image3.jpeg",
+        "/images/image4.jpeg",
+        "/images/image5.jpeg",
+        "/images/image6.jpeg",
+        "/images/image7.jpeg",
+        "/images/image8.jpeg",
+        "/images/image9.jpeg",
+        "/images/image10.jpeg",
+        "/images/image11.jpeg",
+        "/images/image12.jpeg",
+        "/images/image13.jpeg",
+        "/images/image14.jpeg",
+        "/images/image15.jpeg",
+        "/images/image16.jpeg",
+        "/images/image17.jpeg",
+        "/images/image18.jpeg",
+        "/images/image19.jpeg",
+        "/images/image20.jpeg"
     ];
   
     return (

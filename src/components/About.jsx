@@ -21,22 +21,22 @@ const About = () => {
 
                 {/* Right Side - Image */}
                 <img
-                    src="https://source.unsplash.com/600x400/?charity,volunteer"
+                    src="/images/AboutUs.jpeg"
                     alt="Charity Event"
                     className="w-full md:w-1/2 rounded-lg shadow-lg"
                 />
             </div>
 
             {/* Additional Details Section */}
-            <div className="mt-12">
+            {/* <div className="mt-12">
                 <h3 className="text-3xl font-semibold text-center text-green-700">Our Mission</h3>
                 <p className="text-lg text-gray-800 text-center mt-4">
                     We strive to foster a compassionate world, one where education and resources are accessible to all. We believe in equality, empathy, and community-driven solutions.
                 </p>
-            </div>
+            </div> */}
 
             {/* Call to Action Section */}
-            <div className="mt-12 text-center">
+            {/* <div className="mt-12 text-center">
                 <h4 className="text-2xl font-semibold text-gray-700 mb-4">How You Can Help</h4>
                 <p className="text-lg text-gray-800 mb-6">
                     Whether through donations, volunteering, or spreading the word, there are many ways you can help us create a better world.
@@ -44,15 +44,15 @@ const About = () => {
                 <button className="bg-green-500 text-white px-6 py-2 rounded-lg shadow-lg">
                     Get Involved
                 </button>
-            </div>
+            </div> */}
 
             {/* Malayalam Text Section */}
-            <div className="mt-12">
+            {/* <div className="mt-12">
                 <h3 className="text-3xl font-semibold text-center text-green-700">എന്താണ് ഞങ്ങളുടെ ദൗത്യങ്ങൾ</h3>
                 <p className="text-lg text-gray-800 text-center mt-4">
                     ഞങ്ങൾ ഒരു ദയാലുവായ ലോകം സൃഷ്‌ടിക്കാൻ ശ്രമിക്കുന്നു, എവിടെ വിദ്യാഭ്യാസവും വിഭവങ്ങളും എല്ലാരും ലഭ്യമാണ്. നമുക്ക് തുല്യവും, കരുണയുമുള്ള, സമുദായ-ചാലിതമായ പരിഹാരങ്ങൾ വിശ്വസിക്കുന്നു.
                 </p>
-            </div>
+            </div> */}
         </section>
     );
 };

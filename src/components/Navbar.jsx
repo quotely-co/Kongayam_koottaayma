@@ -14,11 +14,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo - Clickable Home link */}
-          <Link 
-            to="/" 
-            className="text-xl font-bold tracking-tight hover:text-emerald-600 transition-colors"
-          >
-            Kongayam Koottaayma
+          <Link to="/" className="flex items-center">
+            {/* Logo Image */}
+            <img
+              src="/images/logo.png" // Replace with your logo path
+              alt="Kongayam Koottaayma Logo"
+              className="h-10" // Adjust the size as needed
+            />
           </Link>
 
           {/* Desktop Menu */}
@@ -45,6 +47,14 @@ const Navbar = () => {
                 className="hover:text-emerald-600 transition-colors py-2"
               >
                 Gallery
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/charity" 
+                className="hover:text-emerald-600 transition-colors py-2"
+              >
+                Charity
               </Link>
             </li>
             <li>
@@ -90,6 +100,14 @@ const Navbar = () => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/charity" 
+                className="hover:text-emerald-600 transition-colors py-2"
+              >
+                Charity
               </Link>
             </li>
             <li>
