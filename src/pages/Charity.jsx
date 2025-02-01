@@ -1,6 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Camera } from 'lucide-react';
 
 const Charity = () => {
+
+  // Function to handle Google Pay redirection
+  const handleGooglePay = () => {
+    // Check if Google Pay app is available
+    const userAgent = navigator.userAgent.toLowerCase();
+    const isAndroid = userAgent.indexOf("android") > -1;
+
+    if (isAndroid) {
+      // Deep link to Google Pay app
+      window.location.href = 'upi://pay?pa=YOUR_UPI_ID@upi&pn=Charity%20Fund&mc=0000&tid=YOUR_TRANSACTION_ID&tr=YOUR_TRANSACTION_REF&tn=Charity%20Donation&am=&cu=INR&url=';
+    } else {
+      // Fallback to web URL
+      window.location.href = 'https://pay.google.com/gp/p/ui/pay?tid=YOUR_TRANSACTION_ID';
+    }
+  };
+
+
+
   return (
     <section className="container mx-auto px-4 py-8 max-w-6xl">
       {/* Hero Section */}
@@ -71,16 +90,39 @@ const Charity = () => {
         </div>
       </div>
 
-      {/* Call to Action */}
-      <div className="text-center">
+      {/* Payment Options */}
+      <div className="text-center mb-16">
         <h3 className="text-2xl font-semibold text-gray-700 mb-4">സഹായിക്കാൻ തയ്യാറാണോ?</h3>
         <p className="text-lg text-gray-700 mb-6">
           നിങ്ങളുടെ ഓരോ സംഭാവനയും ഒരു കുടുംബത്തിന് പ്രതീക്ഷയുടെ കിരണമാണ്
         </p>
-        <button className="bg-green-600 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition-colors text-lg">
-          സംഭാവന ചെയ്യൂ
-        </button>
+
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <button
+            onClick={handleGooglePay}
+            className="bg-green-600 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition-colors text-lg flex items-center justify-center gap-2"
+          >
+            <img
+              src="/api/placeholder/24/24"
+              alt="Google Pay"
+              className="w-6 h-6"
+            />
+            Google Pay വഴി സംഭാവന ചെയ്യൂ
+          </button>
+        </div>
+
+        {/* Google Pay QR Code Image */}
+        <div className="mt-8">
+          <h4 className="text-xl text-green-700 mb-4">Google Pay QR Code</h4>
+          <img
+            src="/images/scanner.png" // Replace with your actual QR code image path
+            alt="Google Pay QR Code"
+            className="mx-auto rounded-lg shadow-lg w-64"
+          />
+        </div>
       </div>
+
+
     </section>
   );
 };
