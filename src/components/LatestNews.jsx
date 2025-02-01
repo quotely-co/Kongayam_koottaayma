@@ -10,22 +10,22 @@ const LatestNews = () => {
       imageUrl: "/images/news.jpeg", // Add image URL here
       isUpcoming: true // Flag to mark upcoming news
     },
-    {
-      id: 2,
-      title: "ചാരിറ്റി ഫണ്ട് വിതരണം",
-      date: "2024 ഫെബ്രുവരി 1",
-      description: "രോഗികൾക്ക് സഹായധനം വിതരണം ചെയ്തു. 50 കുടുംബങ്ങൾക്ക് സഹായം ലഭിച്ചു.",
-      imageUrl: "/path/to/your/image2.jpg", // Add image URL here
-      isUpcoming: false
-    },
-    {
-      id: 3,
-      title: "മെഡിക്കൽ ക്യാമ്പ്",
-      date: "2024 മാർച്ച് 10",
-      description: "സൗജന്യ മെഡിക്കൽ ക്യാമ്പ് സംഘടിപ്പിച്ചു. 200-ലധികം പേർക്ക് പ്രയോജനം ലഭിച്ചു.",
-      imageUrl: "/path/to/your/image3.jpg", // Add image URL here
-      isUpcoming: true
-    }
+    // {
+    //   id: 2,
+    //   title: "ചാരിറ്റി ഫണ്ട് വിതരണം",
+    //   date: "2024 ഫെബ്രുവരി 1",
+    //   description: "രോഗികൾക്ക് സഹായധനം വിതരണം ചെയ്തു. 50 കുടുംബങ്ങൾക്ക് സഹായം ലഭിച്ചു.",
+    //   imageUrl: "/path/to/your/image2.jpg", // Add image URL here
+    //   isUpcoming: false
+    // },
+    // {
+    //   id: 3,
+    //   title: "മെഡിക്കൽ ക്യാമ്പ്",
+    //   date: "2024 മാർച്ച് 10",
+    //   description: "സൗജന്യ മെഡിക്കൽ ക്യാമ്പ് സംഘടിപ്പിച്ചു. 200-ലധികം പേർക്ക് പ്രയോജനം ലഭിച്ചു.",
+    //   imageUrl: "/path/to/your/image3.jpg", // Add image URL here
+    //   isUpcoming: true
+    // }
   ];
 
   return (
