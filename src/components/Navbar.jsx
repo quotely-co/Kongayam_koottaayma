@@ -103,11 +103,12 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link 
-                to="/charity" 
-                className="hover:text-emerald-600 transition-colors py-2"
+              <Link
+                to="/charity"
+                className="block py-2 px-4 hover:bg-emerald-200 rounded-lg transition-colors"
+                onClick={() => setIsMenuOpen(false)}
               >
-                Charity
+                charity
               </Link>
             </li>
             <li>
