@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container mx-auto text-center">
                 {/* Social Media Links */}
                 <div className="flex justify-center space-x-6 mb-6">
-                    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                    <a href="https://www.facebook.com/kongayam" target="_blank" rel="noopener noreferrer">
                         <FaFacebook size={30} className="text-black hover:text-green-600" />
                     </a>
                     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
