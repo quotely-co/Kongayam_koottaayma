@@ -1,71 +1,86 @@
+import React from 'react';
+import { MapPin, Phone, MessageCircle } from 'lucide-react';
+
 const Contact = () => {
-    return (
-      <section className="container mx-auto p-6">
-        {/* Heading */}
-        <h2 className="text-4xl font-bold text-center mb-6 text-blue-600">Contact Us</h2>
-  
-        <div className="flex flex-col lg:flex-row gap-8">
-          {/* Left Side - Contact Info */}
-          <div className="lg:w-1/2">
-            <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
-            <p className="text-lg text-gray-700 mb-4">
-              We would love to hear from you! Whether you have questions, feedback, or want to get involved, feel free to reach out.
-            </p>
-            <div className="mb-4">
-              <p className="font-semibold text-gray-800">Email:</p>
-              <p className="text-gray-700">contact@charityorg.com</p>
-            </div>
-            <div className="mb-4">
-              <p className="font-semibold text-gray-800">Phone:</p>
-              <p className="text-gray-700">+1 (800) 123-4567</p>
-            </div>
-          </div>
-  
-          {/* Right Side - Contact Form */}
-          <div className="lg:w-1/2">
-            <form className="bg-gray-100 p-6 rounded-lg shadow-lg">
-              <div className="mb-4">
-                <label htmlFor="name" className="block text-sm font-medium text-gray-700">Your Name</label>
-                <input 
-                  type="text" 
-                  id="name" 
-                  placeholder="Enter your name" 
-                  className="w-full p-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-                />
-              </div>
-  
-              <div className="mb-4">
-                <label htmlFor="email" className="block text-sm font-medium text-gray-700">Your Email</label>
-                <input 
-                  type="email" 
-                  id="email" 
-                  placeholder="Enter your email" 
-                  className="w-full p-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-                />
-              </div>
-  
-              <div className="mb-4">
-                <label htmlFor="message" className="block text-sm font-medium text-gray-700">Your Message</label>
-                <textarea 
-                  id="message" 
-                  rows="5" 
-                  placeholder="Enter your message" 
-                  className="w-full p-2 mt-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
-                ></textarea>
-              </div>
-  
-              <button 
-                type="submit" 
-                className="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition duration-200"
-              >
-                Send Message
-              </button>
-            </form>
-          </div>
-        </div>
-      </section>
-    );
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/+919876543210', '_blank'); // Replace with actual number
   };
-  
-  export default Contact;
-  
+
+  return (
+    <section className="container mx-auto px-4 py-8 max-w-6xl">
+      {/* Hero Section */}
+      <div className="text-center mb-12">
+        <h1 className="text-4xl md:text-5xl font-bold text-green-700 mb-4">ബന്ധപ്പെടുക</h1>
+        <div className="w-24 h-1 bg-green-600 mx-auto mb-6"></div>
+      </div>
+
+      {/* Contact Cards */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        {/* WhatsApp Card */}
+        <div 
+          onClick={handleWhatsAppClick}
+          className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center text-center cursor-pointer hover:shadow-xl transition-shadow"
+        >
+          <div className="bg-green-100 p-4 rounded-full mb-4">
+            <MessageCircle className="w-8 h-8 text-green-600" />
+          </div>
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">വാട്സ്ആപ്പ്</h3>
+          <p className="text-gray-600">ഞങ്ങളുമായി വാട്സ്ആപ്പിലൂടെ ബന്ധപ്പെടുക</p>
+          <button className="mt-4 bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors">
+            വാട്സ്ആപ്പ് ചാറ്റ്
+          </button>
+        </div>
+
+        {/* Phone Card */}
+        <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center text-center">
+          <div className="bg-green-100 p-4 rounded-full mb-4">
+            <Phone className="w-8 h-8 text-green-600" />
+          </div>
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">ഫോൺ</h3>
+          <p className="text-gray-600">+91 98765 43210</p>
+          <p className="text-gray-600">+91 98765 43211</p>
+        </div>
+
+        {/* Address Card */}
+        <div className="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center justify-center text-center">
+          <div className="bg-green-100 p-4 rounded-full mb-4">
+            <MapPin className="w-8 h-8 text-green-600" />
+          </div>
+          <h3 className="text-xl font-semibold text-gray-800 mb-2">വിലാസം</h3>
+          <p className="text-gray-600">
+            കോങ്കയം കൂട്ടായ്മ
+            <br />
+            കോങ്കയം, കോഡൂർ പഞ്ചായത്ത്
+            <br />
+            മലപ്പുറം, കേരള
+          </p>
+        </div>
+      </div>
+
+      {/* Map Section */}
+      <div className="bg-white rounded-lg shadow-lg p-4 mb-12">
+        <div className="aspect-w-16 aspect-h-9">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31313.006115574856!2d76.1234567!3d11.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDA3JzM0LjQiTiA3NsKwMDcnMzQuNCJF!5e0!3m2!1sen!2sin!4v1234567890"
+            className="w-full h-full rounded-lg"
+            style={{ minHeight: '400px' }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      {/* Office Hours */}
+      {/* <div className="bg-green-50 rounded-lg shadow-lg p-8 text-center">
+        <h3 className="text-2xl font-semibold text-gray-800 mb-4">ഓഫീസ് സമയം</h3>
+        <div className="space-y-2 text-gray-700">
+          <p>തിങ്കൾ - ശനി: രാവിലെ 9:30 - വൈകുന്നേരം 5:30</p>
+          <p>ഞായർ: അവധി ദിവസം</p>
+        </div>
+      </div> */}
+    </section>
+  );
+};
+
+export default Contact;
