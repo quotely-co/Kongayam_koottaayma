@@ -2,7 +2,6 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Gallery = () => {
   const images = [
-    "/images/video1.mp4",
     "/images/image1.jpeg",
     // "/images/image2.jpeg",
     "/images/image3.jpeg",
