@@ -11,7 +11,7 @@ const Charity = () => {
 
     if (isAndroid) {
       // Deep link to Google Pay app
-      window.location.href = 'upi://pay?pa=9744676504@ptaxis&pn=Charity%20Fund&mc=0000&tid=YOUR_TRANSACTION_ID&tr=YOUR_TRANSACTION_REF&tn=Charity%20Donation&am=&cu=INR&url=';
+      window.location.href = 'upi://pay?pa=9744676504@ptaxis&pn=Charity%20Fund&mc=0000&tn=Charity%20Donation&cu=INR';
     } else {
       // Fallback to web URL
       window.location.href = 'https://pay.google.com/gp/p/ui/pay?tid=YOUR_TRANSACTION_ID';
