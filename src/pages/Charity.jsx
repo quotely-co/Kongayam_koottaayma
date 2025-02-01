@@ -98,27 +98,30 @@ const Charity = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
-          <button
+        <button
             onClick={handleGooglePay}
-            className="bg-green-600 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition-colors text-lg flex items-center justify-center gap-2"
+            className="bg-green-600 text-white px-8 py-3 rounded-lg shadow-lg opacity-50 cursor-not-allowed text-lg flex items-center justify-center gap-2"
+            disabled
           >
             <img
               src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg"
               alt="Google Pay"
               className="w-6 h-6"
             />
-            Google Pay വഴി സംഭാവന ചെയ്യൂ
+            Google Pay വഴി സംഭാവന ചെയ്യൂ (Updating Soon)
           </button>
         </div>
 
         {/* Google Pay QR Code Image */}
         <div className="mt-8">
-          <h4 className="text-xl text-green-700 mb-4">Google Pay QR Code</h4>
-          <img
-            src="/images/scanner.png" // Replace with your actual QR code image path
-            alt="Google Pay QR Code"
-            className="mx-auto rounded-lg shadow-lg w-64"
-          />
+          <h4 className="text-xl text-green-700 mb-4">Google Pay QR Code (Updating Soon)</h4>
+          <div className="relative w-64 mx-auto">
+            <img
+              src="/images/scanner.png"
+              alt="Google Pay QR Code"
+              className="mx-auto rounded-lg shadow-lg w-64 opacity-90 blur-md"
+            />
+          </div>
         </div>
       </div>
 

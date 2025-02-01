@@ -61,7 +61,7 @@ const Contact = () => {
       <div className="bg-white rounded-lg shadow-lg p-4 mb-12">
         <div className="aspect-w-16 aspect-h-9">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31313.006115574856!2d76.1234567!3d11.1234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTHCsDA3JzM0LjQiTiA3NsKwMDcnMzQuNCJF!5e0!3m2!1sen!2sin!4v1234567890"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.1503987444858!2d76.06996357223545!3d11.027340530530749!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba64aafdc83a1b5%3A0x9c125e312d0cb6e4!2sKongayam%20Juma%20Masjid!5e0!3m2!1sen!2sin!4v1738451711395!5m2!1sen!2sin"
             className="w-full h-full rounded-lg"
             style={{ minHeight: '400px' }}
             allowFullScreen=""
