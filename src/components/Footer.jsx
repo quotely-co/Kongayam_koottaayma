@@ -23,7 +23,7 @@ const Footer = () => {
                 {/* Contact Info */}
                 <div className="text-lg mb-4">
                     <p>If you have any questions, feel free to contact us at:</p>
-                    <p>Email: contact@charityorg.com</p>
+                    <p>Phone:</p>
                 </div>
 
                 {/* Copyright */}

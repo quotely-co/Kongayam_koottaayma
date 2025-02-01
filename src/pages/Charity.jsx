@@ -103,7 +103,7 @@ const Charity = () => {
             className="bg-green-600 text-white px-8 py-3 rounded-lg shadow-lg hover:bg-green-700 transition-colors text-lg flex items-center justify-center gap-2"
           >
             <img
-              src="/api/placeholder/24/24"
+              src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg"
               alt="Google Pay"
               className="w-6 h-6"
             />
