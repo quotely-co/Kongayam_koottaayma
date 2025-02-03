@@ -2,26 +2,12 @@ import { Link } from "react-router-dom"; // Import Link from react-router-dom
 
 const Gallery = () => {
   const images = [
-    "/images/image1.jpeg",
-    // "/images/image2.jpeg",
-    "/images/image3.jpeg",
-    // "/images/image4.jpeg",
-    "/images/image5.jpeg",
+    "/images/news2025.1.jpeg",
+    "/images/news2025.2.jpeg",
+    "/images/news2025.3.jpeg",
     "/images/image6.jpeg",
     "/images/image7.jpeg",
     "/images/image8.jpeg",
-    // "/images/image9.jpeg",
-    // "/images/image10.jpeg",
-    // "/images/image11.jpeg",
-    // "/images/image12.jpeg",
-    // "/images/image13.jpeg",
-    // "/images/image14.jpeg",
-    // "/images/image15.jpeg",
-    // "/images/image16.jpeg",
-    // "/images/image17.jpeg",
-    // "/images/image18.jpeg",
-    // "/images/image19.jpeg",
-    // "/images/image20.jpeg"
   ];
 
   return (
@@ -36,7 +22,7 @@ const Gallery = () => {
               alt={`Gallery image ${index + 1}`}
               className="w-full h-48 object-cover transition-transform transform hover:scale-105"
             />
-            
+
           </div>
         ))}
       </div>
