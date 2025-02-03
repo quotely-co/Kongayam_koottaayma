@@ -1,5 +1,8 @@
 const Gallery = () => {
   const images = [
+    "/images/news2025.1.jpeg",
+    "/images/news2025.2.jpeg",
+    "/images/news2025.3.jpeg",
     "/images/image1.jpeg",
     "/images/image2.jpeg",
     "/images/image3.jpeg",
@@ -19,7 +22,8 @@ const Gallery = () => {
     "/images/image17.jpeg",
     "/images/image18.jpeg",
     "/images/image19.jpeg",
-    "/images/image20.jpeg"
+    "/images/image20.jpeg",
+
   ];
 
   return (

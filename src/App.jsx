@@ -6,6 +6,7 @@ import Gallery from "./pages/Gallery.jsx";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Charity from "./pages/Charity.jsx";
+import NewsDetail from "./pages/NewsDetail.jsx";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/charity" element={<Charity />} />
+        <Route path="/news/:id" element={<NewsDetail />} />
       </Routes>
       <Footer />
     </Router>
