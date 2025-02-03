@@ -28,7 +28,7 @@ const LatestNews = () => {
             <article
               onClick={() => navigate(`/news/${item.id}`, { state: { item } })}
               key={item.id}
-              className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl"
+              className="bg-white rounded-xl shadow-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl hover:cursor-pointer"
             >
               <div className="relative h-48 overflow-hidden">
                 <img src={item.images[0]} alt={item.title} className="w-full h-full object-cover" />
